@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Animate Counter</title>
+	</head>
+	<body>
+		<strong data-max='227' data-easing='easeOutQuint' data-duration="6" class="element">0</strong>
+		<strong data-max='227' data-easing='easeInQuad' data-duration="6" class="element">0</strong>
+		<strong data-max='227' data-easing='easeInOutQuart' data-duration="6" class="element">0</strong>
+
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="AnimateCounter.js"></script>
+		<script>
+
+			$('.element').each(function(){
+				new AnimateCounter($(this), 5);
+			});
+
+			// new AnimateCounter($('.element'), 5);
+		</script>
+	</body>
+</html>
